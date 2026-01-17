@@ -1,0 +1,162 @@
+/* MyIconView.css */
+
+/* 1. 전체 컨테이너 및 배경 */
+.my-icon-container {
+    padding: 10px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* 2. 상단 헤더 영역 */
+.store-title {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 1.8rem;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.btn-unequip-glass {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #aaa;
+    padding: 6px 16px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    transition: all 0.3s;
+}
+
+.btn-unequip-glass:hover {
+    background: #e74c3c;
+    color: #fff;
+    border-color: #e74c3c;
+    box-shadow: 0 0 15px rgba(231, 76, 60, 0.4);
+}
+
+/* 3. 글래스모피즘 아이콘 카드 */
+.icon-glass-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-glass-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* 4. 장착 중 상태 (네온 민트 효과) */
+.icon-glass-card.equipped {
+    border: 2px solid #00d2d3;
+    background: rgba(0, 210, 211, 0.05);
+    box-shadow: 0 0 25px rgba(0, 210, 211, 0.3);
+}
+
+.equip-tag {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #00d2d3;
+    color: #000;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 3px 12px;
+    border-radius: 20px;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 5. 아이콘 이미지 래퍼 */
+.icon-img-wrapper {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.5));
+}
+
+.icon-img-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* 6. 희귀도별 아우라 효과 (Glow) */
+.rarity-legendary { border-color: rgba(241, 196, 15, 0.3); }
+.rarity-legendary:hover { box-shadow: 0 0 30px rgba(241, 196, 15, 0.4); }
+
+.rarity-unique { border-color: rgba(163, 102, 255, 0.3); }
+.rarity-unique:hover { box-shadow: 0 0 30px rgba(163, 102, 255, 0.4); }
+
+.rarity-epic { border-color: rgba(231, 76, 60, 0.3); }
+.rarity-epic:hover { box-shadow: 0 0 30px rgba(231, 76, 60, 0.4); }
+
+/* 7. 등급 뱃지 스타일 */
+.rarity-badge {
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* 등급별 색상 정의 */
+.rarity-legendary .rarity-badge { background: #f1c40f; color: #000; }
+.rarity-unique .rarity-badge { background: #a366ff; color: #fff; }
+.rarity-epic .rarity-badge { background: #e74c3c; color: #fff; }
+.rarity-rare .rarity-badge { background: #3498db; color: #fff; }
+.rarity-common .rarity-badge { background: #95a5a6; color: #fff; }
+.rarity-event .rarity-badge { background: #ff9f43; color: #fff; }
+
+/* 8. 아이콘 이름 텍스트 */
+.icon-name-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+/* 9. 빈 상태 디자인 */
+.empty-storage-glass {
+    padding: 80px 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.02);
+    border: 2px dashed rgba(255, 255, 255, 0.05);
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.empty-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    opacity: 0.2;
+}
+
+.empty-storage-glass p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 애니메이션 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

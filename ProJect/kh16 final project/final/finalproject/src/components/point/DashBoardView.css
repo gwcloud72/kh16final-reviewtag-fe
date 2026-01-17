@@ -1,0 +1,78 @@
+.dashContainer {
+    margin-top: 20px;
+    color: #fff;
+}
+
+/* 탭 메뉴 스타일 */
+.dashNavTabs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.dashNavItem {
+    flex: 1;
+}
+
+.dashNavLink {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: transparent;
+    color: #888;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 15px 15px 0 0;
+}
+
+.dashNavLink.active {
+    background: rgba(255, 255, 255, 0.05);
+    color: #00d2d3; /* 포인트 테마 컬러 */
+    border-bottom: 3px solid #00d2d3;
+}
+
+.dashNavLink:hover:not(.active) {
+    color: #ccc;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* 본문 컨텐츠 박스 */
+.dashContentFrame {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+    padding: 25px;
+    min-height: 450px;
+    backdrop-filter: blur(10px);
+}
+
+/* 알림 문구 스타일 */
+.dashAlertInfo {
+    background: rgba(0, 210, 211, 0.05);
+    border-left: 4px solid #00d2d3;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    color: #aaa;
+}
+
+/* 애니메이션 효과 */
+.dashFadeIn {
+    animation: dashFadeEffect 0.4s ease-out;
+}
+
+@keyframes dashFadeEffect {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

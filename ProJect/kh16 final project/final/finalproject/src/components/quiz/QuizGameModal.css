@@ -1,0 +1,35 @@
+
+/* 모달 뒤 배경 */
+.quiz-game-modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 아이콘 정렬이 미세하게 안 맞을 경우를 대비한 유틸 클래스 */
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* --- 신고 폼 스타일 --- */
+.report-form-container {
+    text-align: left;
+}
+
+.report-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* --- 모달 내부 요소 스타일 --- */
+/* 헤더의 신고 버튼 */
+.btn-report {
+    font-size: 0.8rem !important;
+    font-weight: bold !important;
+}
+
+/* 하단 푸터의 버튼 감싸는 영역 */
+.modal-footer-btn-wrapper {
+    width: 100px;
+}
