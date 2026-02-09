@@ -1,0 +1,209 @@
+/* 컨테이너 */
+.ms-container {
+    padding: 10px 5px;
+    background-color: #1a1a1c; /* 모달 내부 배경 */
+}
+
+/* 검색바 디자인 */
+.ms-search-wrapper {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.ms-input-box {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #0d0d0f;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 0 15px;
+    transition: 0.2s;
+}
+
+.ms-input-box:focus-within {
+    border-color: #facc15; /* 강조색 적용 */
+}
+
+.search-icon {
+    font-size: 14px;
+    margin-right: 10px;
+    filter: grayscale(1);
+}
+
+.ms-input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #fff;
+    padding: 12px 0;
+    font-size: 15px;
+    outline: none;
+}
+
+.ms-btn-submit {
+    background: #facc15;
+    color: #000;
+    border: none;
+    padding: 0 25px;
+    border-radius: 8px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.2s;
+    min-width: 80px;
+}
+
+.ms-btn-submit:hover {
+    background: #eab308;
+}
+
+.ms-btn-submit:disabled {
+    background: #444;
+    cursor: not-allowed;
+}
+
+/* 결과 리스트 스크롤러 */
+.ms-result-container {
+    max-height: 450px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+/* 커스텀 스크롤바 */
+.ms-result-container::-webkit-scrollbar { width: 6px; }
+.ms-result-container::-webkit-scrollbar-track { background: transparent; }
+.ms-result-container::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+
+/* 영화 아이템 카드 */
+.ms-movie-item {
+    display: flex;
+    align-items: center;
+    background: #232325;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    gap: 15px;
+    border: 1px solid transparent;
+    transition: 0.2s;
+}
+
+.ms-movie-item:hover {
+    background: #2a2a2c;
+    border-color: #444;
+}
+
+/* 이미지 깨짐 방지 및 고정 */
+.ms-poster-box {
+    width: 60px;
+    height: 85px;
+    background: #000;
+    border-radius: 6px;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 1px solid #111;
+}
+
+.ms-poster-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지가 찌그러지지 않게 꽉 채움 */
+}
+
+/* 정보 텍스트 */
+.ms-movie-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ms-movie-title {
+    font-weight: 700;
+    color: #fff;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.ms-movie-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ms-date {
+    font-size: 13px;
+    color: #777;
+}
+
+.ms-id-badge {
+    font-size: 11px;
+    background: #111;
+    color: #555;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+/* 선택 버튼 */
+.ms-btn-select-action {
+    background: #333;
+    color: #eee;
+    border: 1px solid #444;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.ms-btn-select-action:hover {
+    background: #facc15;
+    color: #000;
+    border-color: #facc15;
+}
+
+/* 공백 상태 디자인 */
+.ms-empty-state {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.empty-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    opacity: 0.2;
+}
+
+.empty-text {
+    color: #666;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.empty-sub {
+    color: #444;
+    font-size: 13px;
+}
+
+/* 로더 애니메이션 (간단히) */
+.loader {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

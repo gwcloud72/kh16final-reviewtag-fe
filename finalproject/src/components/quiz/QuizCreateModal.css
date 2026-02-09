@@ -1,0 +1,39 @@
+/* 모달 뒤 배경 */
+.quiz-modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 문제 글자수 카운터 */
+.quiz-text-counter {
+    font-size: 0.85rem;
+    color: #6c757d; /* Bootstrap text-muted 색상 */
+    text-align: right;
+    margin-top: 0.25rem;
+}
+
+/* 보기 번호 (1, 2, 3, 4) 박스 */
+.quiz-option-number {
+    width: 40px;
+    justify-content: center;
+}
+
+/* 보기 글자수 카운터  */
+.quiz-option-counter {
+    font-size: 0.8rem;
+    min-width: 70px;
+    justify-content: flex-end;
+    color: #6c757d;
+}
+
+/* OX 퀴즈 선택 박스 */
+.quiz-ox-box {
+    background-color: #f8f9fa;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+/* 라디오 버튼 커서 변경 */
+.cursor-pointer {
+    cursor: pointer;
+}

@@ -1,0 +1,63 @@
+/* PointItemDetailModal.css */
+
+.itemdetail-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex; justify-content: center; align-items: center;
+    z-index: 1050; /* Swal 기본 z-index보다 낮게 설정하여 Swal이 위에 뜨게 함 */
+    backdrop-filter: blur(8px);
+}
+
+.itemdetail-glass-content {
+    background-color: #0d1117;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 90%; max-width: 800px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.itemdetail-close-btn {
+    position: absolute; top: 15px; right: 20px;
+    background: none; border: none; color: #8b949e;
+    font-size: 24px; cursor: pointer; z-index: 100;
+}
+
+.itemdetail-body { display: flex; flex-wrap: wrap; }
+
+.itemdetail-img-section {
+    flex: 1; min-width: 300px;
+    background-color: #010409;
+    display: flex; align-items: center; justify-content: center;
+    padding: 40px; border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.itemdetail-img-section img { max-width: 100%; height: auto; border-radius: 8px; }
+
+.itemdetail-info-section { flex: 1.2; min-width: 300px; padding: 40px; display: flex; flex-direction: column; }
+
+.itemdetail-type-badge {
+    color: #58a6ff; background: rgba(56, 139, 253, 0.1);
+    padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; width: fit-content;
+}
+
+.itemdetail-title { color: #f0f6fc; font-size: 24px; margin: 15px 0; }
+.itemdetail-desc { color: #8b949e; line-height: 1.6; margin-bottom: 25px; flex-grow: 1; }
+
+.itemdetail-price-box {
+    border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 20px; margin-bottom: 20px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+.itemdetail-label { color: #8b949e; }
+.itemdetail-price { color: #e3b341; font-size: 22px; font-weight: 700; }
+
+.itemdetail-buy-btn {
+    background-color: #238636; color: #fff; border: none;
+    padding: 14px; border-radius: 8px; font-weight: 700; cursor: pointer;
+    transition: background 0.2s;
+}
+
+.itemdetail-buy-btn:hover { background-color: #2ea043; }

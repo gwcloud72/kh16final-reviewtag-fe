@@ -1,0 +1,149 @@
+.historyGlassWrapper {
+    padding: 10px;
+    color: #fff;
+}
+
+.historyHeaderGlass {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 25px;
+    padding: 0 10px;
+}
+
+.historyTitleGlass {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 1.8rem;
+    color: #00d2d3;
+    margin: 0;
+}
+
+.historyTotalCntGlass {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.historyFilterGroup {
+    display: flex;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 5px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.historyFilterBtn {
+    border: none;
+    background: transparent;
+    color: #888;
+    padding: 6px 18px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.historyFilterBtn.active {
+    background: #00d2d3;
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 210, 211, 0.3);
+}
+
+.historyListFrame {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+}
+
+.historyListHeaderRow {
+    display: flex;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.75rem;
+    color: #00d2d3;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.historyRow {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.2s;
+}
+
+.historyRow:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.historyColDate { width: 80px; text-align: center; }
+.historyColType { width: 100px; text-align: center; }
+.historyColDesc { flex: 1; padding: 0 20px; text-align: left; }
+.historyColAmount { width: 120px; text-align: right; }
+
+.historyRowDate { font-weight: bold; font-size: 0.95rem; }
+.historyRowTime { font-size: 0.75rem; }
+
+.historyTypeBadgeGlass {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* 타입별 색상 접두사 적용 */
+.historyTypeGET { background: rgba(0, 210, 211, 0.1); color: #00d2d3; border: 1px solid #00d2d3; }
+.historyTypeUSE { background: rgba(255, 71, 87, 0.1); color: #ff4757; border: 1px solid #ff4757; }
+.historyTypeSEND { background: rgba(255, 159, 67, 0.1); color: #ff9f43; border: 1px solid #ff9f43; }
+.historyTypeRECEIVED { background: rgba(84, 160, 255, 0.1); color: #54a0ff; border: 1px solid #54a0ff; }
+
+.historyAmtPlus { color: #00d2d3; font-weight: bold; }
+.historyAmtMinus { color: #ff4757; font-weight: bold; }
+.historyAmtZero { color: #888; }
+.historyAmtText { font-size: 1.1rem; }
+.historyAmtUnit { font-size: 0.75rem; margin-left: 3px; }
+
+.historyPagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.historyPageBtn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #aaa;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.historyPageBtn.active {
+    background: #00d2d3;
+    color: #000;
+    font-weight: bold;
+    border-color: #00d2d3;
+}
+
+.historyPageBtn:hover:not(.active) {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.historyEmptyBox {
+    padding: 60px 0;
+    text-align: center;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.historyEmptyIcon { font-size: 3rem; opacity: 0.3; }
+.historyMe2 { margin-right: 0.5rem; }
+.historyTextSecondary { color: #888; }

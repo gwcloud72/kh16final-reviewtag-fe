@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 40px;
+  animation: float 3s ease-in-out infinite; /* 부유 효과 */
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #888;
+  margin-bottom: 30px;
+}
+
+.homeBtn {
+  padding: 12px 30px;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
