@@ -1,0 +1,128 @@
+/* MemberDetail.css */
+:root {
+    --primary-green: #00ffcc;
+    --danger-red: #ff3b30;
+    --bg-card: #161618;
+}
+
+.member-detail-wrapper {
+    max-width: 550px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: var(--bg-card);
+    border-radius: 24px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8);
+}
+
+.member.form-control {
+    background-color: #000 !important;
+    border: 2px solid #333 !important;
+    color: #fff !important;
+    height: 55px;
+    border-radius: 12px;
+}
+
+/* ⭐ 활성화된 초록색 테두리 (onBlur 시) */
+.form-control.is-valid {
+    border-color: var(--primary-green) !important;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
+    background-image: none !important;
+}
+
+/* ⭐ 에러 발생 시 빨간색 테두리 */
+.form-control.is-invalid {
+    border-color: var(--danger-red) !important;
+    box-shadow: 0 0 10px rgba(255, 59, 48, 0.2);
+    background-image: none !important;
+}
+
+/* ⭐ 정보 수정 완료 버튼 (활성화 상태) */
+.btn-member-edit {
+    width: 100%;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--primary-green) !important; /* 강제 초록색 */
+    color: #000 !important;
+    transition: 0.3s;
+}
+
+/* ⭐ 비활성화 상태 (꺼진 상태) - 훨씬 어둡게 조정 */
+.btn-member-edit:disabled {
+    background-color: #222 !important; /* 꺼진 전구 느낌 */
+    color: #555 !important;
+    cursor: not-allowed;
+    box-shadow: none !important;
+}
+
+/* 취소 버튼 (빨간색) */
+.btn-cancel {
+    width: 100%;
+    height: 55px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: var(--danger-red) !important;
+    color: #fff !important;
+    margin-top: 15px;
+}
+
+
+/* ... 기존 코드 유지 ... */
+
+.datepicker-container {
+    width: 100%;
+}
+
+/* DatePicker 커스텀 스타일 */
+.react-datepicker-wrapper {
+    width: 100%;
+}
+
+.react-datepicker__input-container input {
+    width: 100%;
+}
+
+/* 주소 검색 버튼 */
+.btn-address-tool {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    width: 60px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-address-tool:hover {
+    background-color: var(--primary-green);
+    color: #000;
+}
+
+/* 피드백 메시지 스타일 */
+.invalid-feedback {
+    color: var(--danger-red);
+    font-size: 0.85rem;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+label {
+    color: #aaa;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
