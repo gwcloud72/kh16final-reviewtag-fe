@@ -70,4 +70,4 @@ Review Tag는 영화와 다양한 콘텐츠에 대한 리뷰를 한곳에서 즐
 - [ERD](docs/diagrams/erd.png)
 - [화면 상세 설명](docs/screenshot/README.md)
 
-상세 문서에는 직접 화면을 캡처해 첨부하면서, `PointMain.jsx`, `StoreView.jsx`, `InventoryView.jsx`, `StoreProfile.jsx` 등을 주요 사례로 삼아 제가 맡았던 업무의 전체적인 흐름과 트러블슈팅 과정을 하나하나 정리해두었습니다. 실무에서 마주했던 문제 상황과 그에 대한 해결 과정까지 구체적으로 기술해, 문서를 읽는 분들이 실제 현장에서 느끼는 맥락까지 공감하실 수 있도록 신경 썼습니다.
+상세 문서에는 직접 화면을 캡처해 첨부했고, PointMain.jsx, StoreView.jsx, InventoryView.jsx, StoreProfile.jsx와 같은 대표적인 파일들을 중심으로 제가 맡았던 업무의 전체적인 흐름과 트러블슈팅 과정을 단계별로 꼼꼼하게 정리해두었습니다. 실제로 어떤 문제를 어떻게 해결했는지, 그 과정에서 어떤 점을 중점적으로 고민했는지도 구체적으로 기록하여, 제 업무 이해도와 해결 역량을 객관적으로 보여주고자 노력했습니다.
